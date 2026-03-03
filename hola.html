@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Papelería Pergamino | Montevideo</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f8f7f3;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: #1f3d36;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #2d5c52;
+}
+
+.btn-whatsapp {
+    background: #25D366;
+    color: white;
+}
+
+.btn-whatsapp:hover {
+    background: #1ebc57;
+}
+
+section {
+    padding: 70px 10%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #1f3d36;
+}
+
+.about p {
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.1rem;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 15px 0;
+}
+
+.rating {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #1f3d36;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button:hover {
+    background: #2d5c52;
+}
+
+footer {
+    background: #1f3d36;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+iframe {
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Papelería Pergamino</h1>
+    <p>Arte, creatividad y calidad en Montevideo</p>
+    <a href="#productos" class="btn btn-primary">Ver Productos</a>
+    <a href="https://wa.me/59892581894" class="btn btn-whatsapp">WhatsApp</a>
+</header>
+
+<section class="about">
+    <h2>Sobre Nosotros</h2>
+    <p>
+        En Papelería Pergamino ofrecemos una amplia variedad de productos de librería, arte y suministros de oficina.
+        Nos destacamos por la calidad de nuestros materiales y la atención personalizada.
+        Somos un referente en Montevideo para artistas, estudiantes y profesionales.
+    </p>
+</section>
+
+<section id="productos">
+    <h2>Productos Destacados</h2>
+    <div class="products">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e" alt="">
+            <h3>Blocks de Dibujo</h3>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd" alt="">
+            <h3>Papeles Canson</h3>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" alt="">
+            <h3>Materiales para Óleo</h3>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1517842645767-c639042777db" alt="">
+            <h3>Suministros de Oficina</h3>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Opiniones</h2>
+    <div class="rating">
+        ⭐ 4.4 estrellas (123 opiniones)
+        <p>"Excelente atención y variedad de productos."</p>
+        <p>"Gran calidad en materiales de arte."</p>
+    </div>
+</section>
+
+<section>
+    <h2>Ubicación</h2>
+    <iframe 
+        src="https://www.google.com/maps?q=Av.+Gral+Rivera+2649+Montevideo&output=embed"
+        height="300">
+    </iframe>
+</section>
+
+<section>
+    <h2>Contacto</h2>
+    <div class="contact-info">
+        📍 Av. Gral Rivera 2649, Montevideo<br>
+        📞 2706 5994<br>
+        📱 092 581 894<br>
+        📧 ppergamino@gmail.com<br>
+        🕒 Lunes a Viernes 9:00 a 18:30 hs
+    </div>
+
+    <form>
+        <input type="text" placeholder="Tu nombre">
+        <input type="email" placeholder="Tu email">
+        <textarea rows="5" placeholder="Tu mensaje"></textarea>
+        <button type="submit">Enviar Mensaje</button>
+    </form>
+</section>
+
+<footer>
+    © 2026 Papelería Pergamino - Montevideo, Uruguay
+</footer>
+
+<a href="https://wa.me/59892581894" class="whatsapp-float">💬</a>
+
+<!-- CHATBOT -->
+<style>
+    .chat-container {
+        position: fixed;
+        bottom: 90px;
+        right: 20px;
+        width: 300px;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        display: none;
+        flex-direction: column;
+        overflow: hidden;
+        font-size: 14px;
+    }
+    
+    .chat-header {
+        background: #1f3d36;
+        color: white;
+        padding: 15px;
+        font-weight: 600;
+    }
+    
+    .chat-messages {
+        padding: 10px;
+        height: 250px;
+        overflow-y: auto;
+    }
+    
+    .chat-input {
+        display: flex;
+        border-top: 1px solid #ddd;
+    }
+    
+    .chat-input input {
+        flex: 1;
+        border: none;
+        padding: 10px;
+    }
+    
+    .chat-input button {
+        background: #1f3d36;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+    }
+    
+    .chat-toggle {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #1f3d36;
+        color: white;
+        padding: 15px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    
+    .bot {
+        background: #f1f1f1;
+        padding: 8px;
+        border-radius: 10px;
+        margin: 5px 0;
+    }
+    
+    .user {
+        text-align: right;
+        margin: 5px 0;
+    }
+    </style>
+    
+    <div class="chat-container" id="chatBox">
+        <div class="chat-header">Papelería Pergamino</div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="bot">¡Hola! 👋 ¿En qué puedo ayudarte?</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="userInput" placeholder="Escribe tu mensaje...">
+            <button onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+    
+    <div class="chat-toggle" onclick="toggleChat()">💬</div>
+    
+    <script>
+    function toggleChat() {
+        const chat = document.getElementById("chatBox");
+        chat.style.display = chat.style.display === "flex" ? "none" : "flex";
+    }
+    
+    function sendMessage() {
+        const input = document.getElementById("userInput");
+        const message = input.value.toLowerCase();
+        const chatMessages = document.getElementById("chatMessages");
+    
+        if (message.trim() === "") return;
+    
+        chatMessages.innerHTML += `<div class="user">${input.value}</div>`;
+    
+        let response = "No entendí tu consulta. Podés preguntarme sobre horarios, dirección, productos o contacto.";
+    
+        if (message.includes("horario")) {
+            response = "Nuestro horario es de lunes a viernes de 9:00 a 18:30 hs.";
+        }
+        else if (message.includes("direccion") || message.includes("ubicacion")) {
+            response = "Estamos en Av. Gral Rivera 2649, Montevideo.";
+        }
+        else if (message.includes("telefono")) {
+            response = "Podés llamarnos al 2706 5994.";
+        }
+        else if (message.includes("whatsapp")) {
+            response = "Escribinos por WhatsApp al 092 581 894 👉 https://wa.me/59892581894";
+        }
+        else if (message.includes("productos") || message.includes("venden")) {
+            response = "Vendemos blocks de dibujo, papeles Canson, materiales para óleo, suministros de oficina y mucho más.";
+        }
+    
+        setTimeout(() => {
+            chatMessages.innerHTML += `<div class="bot">${response}</div>`;
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }, 500);
+    
+        input.value = "";
+    }
+    </script>
+
+</body>
+</html>
